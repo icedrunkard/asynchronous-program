@@ -18,7 +18,7 @@ class Crawler():
         self.response=b''
     def fetch(self):
         sock=socket.socket()
-        #sock.setblocking(False)
+        sock.setblocking(False)
         try:
             sock.connect(('baidu.com',80))
         except BlockingIOError:
