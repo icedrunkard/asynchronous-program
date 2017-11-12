@@ -27,7 +27,8 @@ class Crawler():
         print('in crawler',f)
         def connected():
             """
-            会执行callback list中的step方法,其中执行无更改的参数不会变：得到第三个Future，在其中添加step
+            会执行callback list中的step方法,其中执行无更改的参数不会变，如self.i等，
+            执行结果是得到第三个Future，在其中添加step
 
             """
             f.set_result(None)  
